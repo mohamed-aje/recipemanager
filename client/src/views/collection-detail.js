@@ -1,9 +1,10 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { Button, Text, View } from "react-native";
 import { Link } from "react-router-native";
 
 const CollectionDetail = ({ match }) => (
   <View>
+    <Button title="Add New Recipe"/>
     <Text>Here comes the recipe collection containing all recipes</Text>
     <Text>This is collection with id: {match.params.id}</Text>
     <Link to="/recipe-detail/98765" underlayColor="#f0f4f7">
